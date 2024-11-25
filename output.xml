@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2024-11-25T18:30:13.903621" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase 01" source="C:\Users\SPURGE\Rahulsethi\Robotframework_webapplucation_testing\Tests\Testcase_01.robot">
+<test id="s1-t1" name="TC_001" line="5">
+<kw name="login to OrangeHRM" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-25T18:30:14.204529" level="INFO">Opening browser 'chrome' to base url 'http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-25T18:30:14.204529" elapsed="2.232983"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-25T18:30:16.437512" elapsed="0.032741"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-25T18:30:16.471153" level="INFO">Typing text 'Admin' into text field '//input[@id='txtUsername']'.</msg>
+<arg>${username_locator}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T18:30:16.470253" elapsed="0.145700"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-25T18:30:16.615953" level="INFO">Typing text 'Qedge123!@#' into text field '//input[@id='txtPassword']'.</msg>
+<arg>${password_locator}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T18:30:16.615953" elapsed="0.143189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-25T18:30:17.759644" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-25T18:30:16.759142" elapsed="1.000502"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-25T18:30:17.759644" level="INFO">Clicking element '//input[@id='btnLogin']'.</msg>
+<arg>${login_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T18:30:17.759644" elapsed="1.422144"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-25T18:30:20.189182" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-25T18:30:19.181788" elapsed="1.007394"/>
+</kw>
+<status status="PASS" start="2024-11-25T18:30:14.204529" elapsed="5.984653"/>
+</kw>
+<kw name="logout the orangeHRM" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-25T18:30:20.189182" level="INFO">Clicking element '//a[text()='Welcome Suresh']'.</msg>
+<arg>${Profile_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T18:30:20.189182" elapsed="0.114636"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-25T18:30:21.305402" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-25T18:30:20.303818" elapsed="1.001584"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-25T18:30:21.305402" level="INFO">Clicking element '//a[text()='Logout']'.</msg>
+<arg>${logout_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T18:30:21.305402" elapsed="0.367132"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-25T18:30:22.672829" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-25T18:30:21.672534" elapsed="1.000295"/>
+</kw>
+<status status="PASS" start="2024-11-25T18:30:20.189182" elapsed="2.483647"/>
+</kw>
+<status status="PASS" start="2024-11-25T18:30:14.204529" elapsed="8.468300"/>
+</test>
+<status status="PASS" start="2024-11-25T18:30:13.903621" elapsed="8.769208"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase 01">Testcase 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
